@@ -1,3 +1,8 @@
-# motion_planning
-SOCP求解器
- $\sum_{i=1}^n a_i=0$
+minimize c.transpose() * x
+subject to :
+  n (n can be arbitrary) socp constraints:
+  A_1 * x + b
+  ...
+  A_n * x + b
+  and equality constraint: 
+  G * x = h
